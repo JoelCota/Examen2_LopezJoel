@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <!-- Título de la canción -->
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Playing"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="40dp"
+        android:gravity="center" />
+    <!-- Información adicional de la canción -->
+    <TextView
+        android:id="@+id/tvSongInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist: Taylor Swift"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Botón de Reproducir (simula la reproducción de la canción) -->
+    <Button
+        android:id="@+id/btnPlayPause"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Pause"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center" />
+
+
+
+    <!-- Botón para detener la reproducción y regresar -->
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Stop"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_gravity="center" />
+</LinearLayout>

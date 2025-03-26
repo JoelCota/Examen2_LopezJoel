@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/windowBackground"
+    >
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+    android:background="?android:attr/selectableItemBackground"
+    android:contentDescription="Back"
+    android:layout_gravity="start"
+    android:layout_marginBottom="16dp"
+    android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Nueva Canción"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la canción"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/colorOnBackground"
+        android:textColorHint="@color/colorOnSurface"/>
+
+    <EditText
+        android:id="@+id/etArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Artista"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/colorOnBackground"
+        android:textColorHint="@color/colorOnSurface"/>
+
+    <EditText
+        android:id="@+id/etDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duración"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/colorOnBackground"
+        android:textColorHint="@color/colorOnSurface"/>
+
+    <EditText
+        android:id="@+id/etAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Álbum"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorOnBackground"
+        android:textColorHint="@color/colorOnSurface"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>
